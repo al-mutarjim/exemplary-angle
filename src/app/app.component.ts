@@ -10,7 +10,7 @@ const SMALL_WIDTH_BREAKPOINT = 1240;
 })
 export class AppComponent implements OnInit {
   matcher: MediaQueryList;
-  title = 'Admin settings';
+  title = 'Engenho Novo MDC';
 
   constructor(private _router: Router) {
   }
@@ -19,12 +19,12 @@ export class AppComponent implements OnInit {
   @ViewChild('appDrawer') appDrawer: MdcDrawer;
 
   navigationLinks = [
-    {name: 'Home', route: 'home', icon: '../assets/Icon%20-%2032x24%20-%20Home.svg'},
-    {name: 'General', route: 'general-settings', icon: '../assets/Icon%20-%2032x24%20-%20General%20Settings.svg'},
-    {name: 'Roles', route: 'roles', icon: '../assets/Icon%20-%2032x24%20-%20Roles.svg'},
-    {name: 'Users', route: 'users', icon: '../assets/Icon%20-%2032x24%20-%20Users.svg'},
-    {name: 'Forms', route: 'forms', icon: '../assets/Icon%20-%2032x24%20-%20Forms.svg'},
-    {name: 'Episodes', route: 'episodes', icon: '../assets/Icon%20-%2032x24%20-%20Episodes.svg'}
+    {name: 'In Media Res', route: 'home', icon: '../assets/Icon%20-%2032x24%20-%20Home.svg'},
+    {name: 'In Principio', route: 'general-settings', icon: '../assets/Icon%20-%2032x24%20-%20General%20Settings.svg'},
+    {name: 'Satisfaction', route: 'roles', icon: '../assets/Icon%20-%2032x24%20-%20Roles.svg'},
+    {name: 'Brown Sugar', route: 'users', icon: '../assets/Icon%20-%2032x24%20-%20Users.svg'},
+    {name: 'Jumping Jack Flash', route: 'forms', icon: '../assets/Icon%20-%2032x24%20-%20Forms.svg'},
+    {name: 'Sympathy for the Devil', route: 'episodes', icon: '../assets/Icon%20-%2032x24%20-%20Episodes.svg'}
   ];
 
   isScreenSmall(): boolean {

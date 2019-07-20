@@ -1,12 +1,14 @@
 @import "color-palette";
 
-$mdc-theme-primary: #244EED;
-$mdc-theme-secondary: #EDB124;
-$mdc-typography-font-family: "Montserrat";
+$mdc-theme-primary: #607d8b;
+$mdc-theme-secondary: #ffffe0;
+
+@import "~@angular-mdc/theme/material";
+
+$mdc-typography-font-family: "News Cycle";
 
 body {
   margin: 0;
-  font-family: "Montserrat", serif;
+  font-family: "News Cycle", sans-serif;
   height: 100vh;
 }
-

@@ -1,19 +1,24 @@
-<mdc-top-app-bar fixed #topAppBar class="top-app-bar">
-  <mdc-top-app-bar-row>
-    <mdc-top-app-bar-section align="start" title="Admin settings">
+<mdc-top-app-bar fixed #topAppBar class="top-app-bar mdc-typography">
+  <mdc-top-app-bar-row >
+    <mdc-top-app-bar-section align="start">
       <button mdcIconButton mdcTopAppBarNavIcon icon="menu" (click)="appDrawer.open = !appDrawer.open"></button>
+      <span style="font-size: 21px">
+        <i class="fas fa-cogs fa-2x"></i>
+        &nbsp;Engenho Novo MDC</span>
     </mdc-top-app-bar-section>
   </mdc-top-app-bar-row>
 </mdc-top-app-bar>
 
 <mdc-drawer drawer="modal" #appDrawer>
-  <mdc-drawer-header title="Admin settings"></mdc-drawer-header>
+
+  <mdc-drawer-header style="margin-top: 25px; font-size: 24px;"><i class="fas fa-sun fa-2x"></i>&nbsp;&nbsp;O Cardáṕio</mdc-drawer-header>
   <mdc-list-divider></mdc-list-divider>
   <mdc-drawer-content>
     <mdc-list-item *ngFor="let navItem of navigationLinks" (selectionChange)="onDrawerSelect(navItem.route,rla)"
                    [activated]="rla.isActive"
                    routerLinkActive #rla="routerLinkActive"
-                   [routerLink]="navItem.route">
+                   [routerLink]="navItem.route"
+                   class="dignity">
       <mdc-list-item-graphic>
         <img [src]="navItem.icon" alt="">
       </mdc-list-item-graphic>
